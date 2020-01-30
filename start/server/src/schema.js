@@ -9,6 +9,22 @@ const typeDefs = gql`
         isBooked: Boolean!
     }
 
+    type User {
+        id: ID!
+        email: String!
+        trips: [Launch]
+    }
+
+    type Mission {
+        name: String
+        missionPatch(size: PatchSize): String
+    }
+
+    enum PatchSize {
+        SMALL
+        LARGE
+    }
+
 `
 
 module.exports = typeDefs
