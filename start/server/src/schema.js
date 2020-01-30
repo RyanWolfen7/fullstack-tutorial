@@ -27,6 +27,12 @@ const typeDefs = gql`
         launches: [Launch]
     }
 
+    type Rocket {
+        id: ID!
+        name: String
+        type: String
+    }
+
     type User {
         id: ID!
         email: String!
