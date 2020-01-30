@@ -12,7 +12,7 @@ const typeDefs = gql`
     type User {
         id: ID!
         email: String!
-        trips: [Launch]
+        trips: [Launch]!
     }
 
     type Mission {
